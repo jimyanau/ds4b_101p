@@ -42,10 +42,11 @@ np.sum([1, 2, 3])
 bikes_df = pd.read_excel("./00_data_raw/bikes.xlsx", engine='openpyxl')
 bikeshops_df = pd.read_excel("./00_data_raw/bikeshops.xlsx", engine='openpyxl')
 orderlines_df = pd.read_excel(
-    io="./00_data_raw/orderlines.xlsx",
+    io="./00_data_raw/orderlines2.xlsx",
     engine='openpyxl',
     converters={'order.date': str}
 )
+
 orderlines_df.info()
 
 orderlines_df
